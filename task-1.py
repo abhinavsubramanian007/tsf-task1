@@ -21,3 +21,10 @@ plt.show()
 ## 
 model= sm.OLS(y, x).fit()
 print(model.summary())
+
+def model(h):
+  s_cap= 10.1743*h
+  print("The estimated score of a student who studies for {} hours per day is {}".format(h, round(s_cap, 2)))
+  
+h= 9.25
+model(h)        
